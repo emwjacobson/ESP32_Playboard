@@ -859,29 +859,12 @@ $EndComp
 Wire Wire Line
 	1850 3100 1850 3150
 Connection ~ 1850 3150
-Text Label 800  3000 0    50   ~ 0
-OSC_P
-Text Label 2400 3000 2    50   ~ 0
-OSC_N
-Wire Wire Line
-	800  3000 1100 3000
+Text Label 1100 3000 0    50   ~ 0
+OSC+
+Text Label 2500 3000 2    50   ~ 0
+OSC-
 Wire Wire Line
 	1950 3000 2200 3000
-$Comp
-L Device:R_Small R3
-U 1 1 61C94EE5
-P 1200 3000
-F 0 "R3" V 1100 3000 50  0000 C CNN
-F 1 "0" V 1300 3000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1200 3000 50  0001 C CNN
-F 3 "~" H 1200 3000 50  0001 C CNN
-F 4 "https://www.lcsc.com/product-detail/C15402.html" H 1200 3000 50  0001 C CNN "LCSC Link"
-F 5 "C15402" H 1200 3000 50  0001 C CNN "LCSC Part Number"
-F 6 "UNI-ROYAL(Uniroyal Elec)" H 1200 3000 50  0001 C CNN "Manufacturer"
-F 7 "0603WAJ0000T5E" H 1200 3000 50  0001 C CNN "Manufacturer Part Number"
-	1    1200 3000
-	0    1    1    0   
-$EndComp
 $Comp
 L Device:C_Small C7
 U 1 1 61C99451
@@ -914,12 +897,10 @@ F 7 "CC0603JRNPO9BN200" H 2200 3100 50  0001 C CNN "Manufacturer Part Number"
 $EndComp
 Connection ~ 2200 3000
 Wire Wire Line
-	2200 3000 2400 3000
+	2200 3000 2500 3000
 Connection ~ 1600 3000
 Wire Wire Line
 	1600 3000 1750 3000
-Wire Wire Line
-	1300 3000 1600 3000
 $Comp
 L power:GND #PWR08
 U 1 1 61CA6A2F
@@ -1191,9 +1172,9 @@ Connection ~ 3600 3350
 Wire Wire Line
 	3600 3350 3600 3400
 Text Label 4100 3700 3    50   ~ 0
-OSC_N
+OSC-
 Text Label 4000 3700 3    50   ~ 0
-OSC_P
+OSC+
 Wire Wire Line
 	4100 4050 4100 3700
 Wire Wire Line
@@ -2058,4 +2039,6 @@ F 7 "TS-1101-C-W" H 2450 5550 50  0001 C CNN "Manufacturer Part Number"
 	1    2450 5550
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	1100 3000 1600 3000
 $EndSCHEMATC
