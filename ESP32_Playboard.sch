@@ -25,7 +25,7 @@ F 3 "" H 5200 6000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text Notes 9950 6450 0    50   ~ 0
-TODO:\nANTENNA DESIGN?!\nLEDs\n    (Single color? Neopixel?)\nReset Button\nDownload Button(?)\nJTAG\n
+TODO:\nANTENNA DESIGN?!\nLEDs\n    (Single color? Neopixel?)\nReset Button\nDownload Button(?)\nJTAG\nREADME
 $Comp
 L Regulator_Linear:AMS1117-3.3 U1
 U 1 1 61BE35A8
@@ -54,8 +54,6 @@ F 3 "" H 9700 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	9400 1400 9350 1400
-Text Label 8600 1400 0    50   ~ 0
-USB_5V
 Wire Wire Line
 	10000 1400 10050 1400
 Text Label 10550 1400 2    50   ~ 0
@@ -103,8 +101,6 @@ Wire Wire Line
 Wire Wire Line
 	10050 1750 9700 1750
 Wire Wire Line
-	8600 1400 9000 1400
-Wire Wire Line
 	9350 1600 9350 1750
 Wire Wire Line
 	9350 1750 9700 1750
@@ -143,7 +139,6 @@ Wire Wire Line
 	3100 4750 3100 4650
 Wire Wire Line
 	3100 4650 2900 4650
-Connection ~ 3100 4650
 Text Label 1100 4650 0    50   ~ 0
 REG_3V3
 Wire Wire Line
@@ -385,27 +380,6 @@ F 3 "" H 1200 1800 50  0001 C CNN
 $EndComp
 NoConn ~ 1500 1600
 NoConn ~ 1100 1800
-Text Label 2100 1200 2    50   ~ 0
-USB_5V
-Wire Wire Line
-	1500 1200 2100 1200
-$Comp
-L Device:Polyfuse_Small F1
-U 1 1 61DE7E30
-P 9100 1400
-F 0 "F1" V 8895 1400 50  0000 C CNN
-F 1 "500mA 1A" V 8986 1400 50  0000 C CNN
-F 2 "Fuse:Fuse_0805_2012Metric_Castellated" H 9150 1200 50  0001 L CNN
-F 3 "~" H 9100 1400 50  0001 C CNN
-F 4 "https://www.lcsc.com/product-detail/C910822.html" H 9100 1400 50  0001 C CNN "LCSC Link"
-F 5 "C910822" H 9100 1400 50  0001 C CNN "LCSC Part Number"
-F 6 "BHFUSE" H 9100 1400 50  0001 C CNN "Manufacturer"
-F 7 "BSMD0805-050-24V" H 9100 1400 50  0001 C CNN "Manufacturer Part Number"
-	1    9100 1400
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9200 1400 9350 1400
 Connection ~ 9350 1400
 $Comp
 L Power_Protection:USBLC6-2SC6 U2
@@ -724,106 +698,106 @@ CH_RTS
 $Comp
 L Device:Q_NPN_BEC Q2
 U 1 1 6215827C
-P 2100 6100
-F 0 "Q2" H 2291 6146 50  0000 L CNN
-F 1 "Q_NPN_BEC" H 2291 6055 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 6200 50  0001 C CNN
-F 3 "~" H 2100 6100 50  0001 C CNN
-F 4 "https://www.lcsc.com/product-detail/C8667.html" H 2100 6100 50  0001 C CNN "LCSC Link"
-F 5 "C8667" H 2100 6100 50  0001 C CNN "LCSC Part Number"
-F 6 "Nexperia" H 2100 6100 50  0001 C CNN "Manufacturer"
-F 7 "PMBT3904,215" H 2100 6100 50  0001 C CNN "Manufacturer Part Number"
-	1    2100 6100
+P 1750 6250
+F 0 "Q2" H 1941 6296 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 1941 6205 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1950 6350 50  0001 C CNN
+F 3 "~" H 1750 6250 50  0001 C CNN
+F 4 "https://www.lcsc.com/product-detail/C8667.html" H 1750 6250 50  0001 C CNN "LCSC Link"
+F 5 "C8667" H 1750 6250 50  0001 C CNN "LCSC Part Number"
+F 6 "Nexperia" H 1750 6250 50  0001 C CNN "Manufacturer"
+F 7 "PMBT3904,215" H 1750 6250 50  0001 C CNN "Manufacturer Part Number"
+	1    1750 6250
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:Q_NPN_BEC Q3
 U 1 1 62158AC6
-P 2100 6800
-F 0 "Q3" H 2291 6754 50  0000 L CNN
-F 1 "Q_NPN_BEC" H 2291 6845 50  0000 L CNN
-F 2 "Package_TO_SOT_SMD:SOT-23" H 2300 6900 50  0001 C CNN
-F 3 "~" H 2100 6800 50  0001 C CNN
-F 4 "https://www.lcsc.com/product-detail/C8667.html" H 2100 6800 50  0001 C CNN "LCSC Link"
-F 5 "C8667" H 2100 6800 50  0001 C CNN "LCSC Part Number"
-F 6 "Nexperia" H 2100 6800 50  0001 C CNN "Manufacturer"
-F 7 "PMBT3904,215" H 2100 6800 50  0001 C CNN "Manufacturer Part Number"
-	1    2100 6800
+P 1750 6950
+F 0 "Q3" H 1941 6904 50  0000 L CNN
+F 1 "Q_NPN_BEC" H 1941 6995 50  0000 L CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 1950 7050 50  0001 C CNN
+F 3 "~" H 1750 6950 50  0001 C CNN
+F 4 "https://www.lcsc.com/product-detail/C8667.html" H 1750 6950 50  0001 C CNN "LCSC Link"
+F 5 "C8667" H 1750 6950 50  0001 C CNN "LCSC Part Number"
+F 6 "Nexperia" H 1750 6950 50  0001 C CNN "Manufacturer"
+F 7 "PMBT3904,215" H 1750 6950 50  0001 C CNN "Manufacturer Part Number"
+	1    1750 6950
 	1    0    0    1   
 $EndComp
 $Comp
 L Device:R_Small R8
 U 1 1 6217D511
-P 1750 6100
-F 0 "R8" V 1946 6100 50  0000 C CNN
-F 1 "10k" V 1855 6100 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1750 6100 50  0001 C CNN
-F 3 "~" H 1750 6100 50  0001 C CNN
-F 4 "https://www.lcsc.com/product-detail/C25804.html" H 1750 6100 50  0001 C CNN "LCSC Link"
-F 5 "C25804" H 1750 6100 50  0001 C CNN "LCSC Part Number"
-F 6 "UNI-ROYAL(Uniroyal Elec)" H 1750 6100 50  0001 C CNN "Manufacturer"
-F 7 "0603WAF1002T5E" H 1750 6100 50  0001 C CNN "Manufacturer Part Number"
-	1    1750 6100
+P 1400 6250
+F 0 "R8" V 1596 6250 50  0000 C CNN
+F 1 "10k" V 1505 6250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1400 6250 50  0001 C CNN
+F 3 "~" H 1400 6250 50  0001 C CNN
+F 4 "https://www.lcsc.com/product-detail/C25804.html" H 1400 6250 50  0001 C CNN "LCSC Link"
+F 5 "C25804" H 1400 6250 50  0001 C CNN "LCSC Part Number"
+F 6 "UNI-ROYAL(Uniroyal Elec)" H 1400 6250 50  0001 C CNN "Manufacturer"
+F 7 "0603WAF1002T5E" H 1400 6250 50  0001 C CNN "Manufacturer Part Number"
+	1    1400 6250
 	0    -1   -1   0   
 $EndComp
 $Comp
 L Device:R_Small R12
 U 1 1 6217E57E
-P 1750 6800
-F 0 "R12" V 1946 6800 50  0000 C CNN
-F 1 "10k" V 1855 6800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 1750 6800 50  0001 C CNN
-F 3 "~" H 1750 6800 50  0001 C CNN
-F 4 "https://www.lcsc.com/product-detail/C25804.html" H 1750 6800 50  0001 C CNN "LCSC Link"
-F 5 "C25804" H 1750 6800 50  0001 C CNN "LCSC Part Number"
-F 6 "UNI-ROYAL(Uniroyal Elec)" H 1750 6800 50  0001 C CNN "Manufacturer"
-F 7 "0603WAF1002T5E" H 1750 6800 50  0001 C CNN "Manufacturer Part Number"
-	1    1750 6800
+P 1400 6950
+F 0 "R12" V 1596 6950 50  0000 C CNN
+F 1 "10k" V 1505 6950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 1400 6950 50  0001 C CNN
+F 3 "~" H 1400 6950 50  0001 C CNN
+F 4 "https://www.lcsc.com/product-detail/C25804.html" H 1400 6950 50  0001 C CNN "LCSC Link"
+F 5 "C25804" H 1400 6950 50  0001 C CNN "LCSC Part Number"
+F 6 "UNI-ROYAL(Uniroyal Elec)" H 1400 6950 50  0001 C CNN "Manufacturer"
+F 7 "0603WAF1002T5E" H 1400 6950 50  0001 C CNN "Manufacturer Part Number"
+	1    1400 6950
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1850 6100 1900 6100
+	1500 6250 1550 6250
 Wire Wire Line
-	1850 6800 1900 6800
+	1500 6950 1550 6950
 Wire Wire Line
-	1650 6100 1400 6100
+	1300 6250 1050 6250
 Wire Wire Line
-	1000 6800 1400 6800
-Text Label 1000 6100 0    50   ~ 0
+	650  6950 1050 6950
+Text Label 650  6250 0    50   ~ 0
 CH_DTR
-Text Label 1000 6800 0    50   ~ 0
+Text Label 650  6950 0    50   ~ 0
 CH_RTS
 Wire Wire Line
-	2200 6600 2200 6550
+	1850 6750 1850 6700
 Wire Wire Line
-	2200 6550 1400 6350
+	1850 6700 1050 6500
 Wire Wire Line
-	1400 6350 1400 6100
-Connection ~ 1400 6100
+	1050 6500 1050 6250
+Connection ~ 1050 6250
 Wire Wire Line
-	1400 6100 1000 6100
+	1050 6250 650  6250
 Wire Wire Line
-	2200 6300 2200 6350
+	1850 6450 1850 6500
 Wire Wire Line
-	2200 6350 1400 6550
+	1850 6500 1050 6700
 Wire Wire Line
-	1400 6550 1400 6800
-Connection ~ 1400 6800
+	1050 6700 1050 6950
+Connection ~ 1050 6950
 Wire Wire Line
-	1400 6800 1650 6800
+	1050 6950 1300 6950
 Wire Wire Line
-	2200 5900 2200 5850
+	1850 6050 1850 6000
 Wire Wire Line
-	2200 5850 2700 5850
+	1850 6000 2350 6000
 Wire Wire Line
-	2200 7000 2200 7050
+	1850 7150 1850 7200
 Wire Wire Line
-	2200 7050 2700 7050
-Text Label 2700 5850 2    50   ~ 0
+	1850 7200 2350 7200
+Text Label 2350 6000 2    50   ~ 0
 ESP_EN
-Text Label 2700 7050 2    50   ~ 0
+Text Label 2350 7200 2    50   ~ 0
 GPIO0
-Text Label 4500 6950 1    50   ~ 0
+Text Label 4500 7200 1    50   ~ 0
 GPIO0
 $Comp
 L Device:R_Small R10
@@ -898,7 +872,7 @@ L Device:R_Small R3
 U 1 1 61C94EE5
 P 1200 3000
 F 0 "R3" V 1100 3000 50  0000 C CNN
-F 1 "0" V 1200 3000 50  0000 C CNN
+F 1 "0" V 1300 3000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" H 1200 3000 50  0001 C CNN
 F 3 "~" H 1200 3000 50  0001 C CNN
 F 4 "https://www.lcsc.com/product-detail/C15402.html" H 1200 3000 50  0001 C CNN "LCSC Link"
@@ -968,41 +942,39 @@ F 3 "" H 2200 3200 50  0001 C CNN
 	1    2200 3200
 	1    0    0    -1  
 $EndComp
-Text Label 2250 5400 0    50   ~ 0
+Text Label 2050 5400 0    50   ~ 0
 ESP_EN
 Wire Wire Line
-	2950 5400 2250 5400
-Text Label 2250 5250 0    50   ~ 0
+	2700 5400 2050 5400
+Text Label 2050 5250 0    50   ~ 0
 REG_3V3
 $Comp
 L Device:R_Small R7
 U 1 1 62265357
-P 2750 5250
-F 0 "R7" V 2554 5250 50  0000 C CNN
-F 1 "10k" V 2645 5250 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 2750 5250 50  0001 C CNN
-F 3 "~" H 2750 5250 50  0001 C CNN
-F 4 "https://www.lcsc.com/product-detail/C25804.html" H 2750 5250 50  0001 C CNN "LCSC Link"
-F 5 "C25804" H 2750 5250 50  0001 C CNN "LCSC Part Number"
-F 6 "UNI-ROYAL(Uniroyal Elec)" H 2750 5250 50  0001 C CNN "Manufacturer"
-F 7 "0603WAF1002T5E" H 2750 5250 50  0001 C CNN "Manufacturer Part Number"
-	1    2750 5250
+P 2550 5250
+F 0 "R7" V 2354 5250 50  0000 C CNN
+F 1 "10k" V 2445 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2550 5250 50  0001 C CNN
+F 3 "~" H 2550 5250 50  0001 C CNN
+F 4 "https://www.lcsc.com/product-detail/C25804.html" H 2550 5250 50  0001 C CNN "LCSC Link"
+F 5 "C25804" H 2550 5250 50  0001 C CNN "LCSC Part Number"
+F 6 "UNI-ROYAL(Uniroyal Elec)" H 2550 5250 50  0001 C CNN "Manufacturer"
+F 7 "0603WAF1002T5E" H 2550 5250 50  0001 C CNN "Manufacturer Part Number"
+	1    2550 5250
 	0    -1   1    0   
 $EndComp
 Wire Notes Line
-	470  2490 11220 2490
+	470  2500 11220 2500
 Text Notes 570  670  0    100  ~ 0
 Power & USB
 Wire Notes Line
-	6600 2490 6600 7800
+	6600 2500 6600 7810
 Text Notes 540  2690 0    100  ~ 0
 ESP32
 Text Notes 6700 2700 0    100  ~ 0
 Sensors
 Wire Wire Line
 	3150 4750 3100 4750
-Wire Wire Line
-	3100 4650 3150 4650
 $Comp
 L Device:C_Small C25
 U 1 1 61C740DE
@@ -1084,10 +1056,10 @@ F 0 "C12" V 2850 3775 50  0000 C CNN
 F 1 "10nF (10%)" V 2925 3725 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 2800 3700 50  0001 C CNN
 F 3 "~" H 2800 3700 50  0001 C CNN
-F 4 "" H 2800 3700 50  0001 C CNN "LCSC Link"
-F 5 "" H 2800 3700 50  0001 C CNN "LCSC Part Number"
-F 6 "" H 2800 3700 50  0001 C CNN "Manufacturer"
-F 7 "" H 2800 3700 50  0001 C CNN "Manufacturer Part Number"
+F 4 "https://www.lcsc.com/product-detail/C106218.html" H 2800 3700 50  0001 C CNN "LCSC Link"
+F 5 "C106218" H 2800 3700 50  0001 C CNN "LCSC Part Number"
+F 6 "YAGEO" H 2800 3700 50  0001 C CNN "Manufacturer"
+F 7 "CC0603KRX7R9BB472" H 2800 3700 50  0001 C CNN "Manufacturer Part Number"
 	1    2800 3700
 	0    -1   -1   0   
 $EndComp
@@ -1237,14 +1209,9 @@ Wire Wire Line
 Wire Wire Line
 	3100 4450 3100 4250
 Wire Wire Line
-	2850 5250 2950 5250
+	2050 5250 2450 5250
 Wire Wire Line
-	2250 5250 2650 5250
-Wire Wire Line
-	2950 5400 2950 5250
-Connection ~ 2950 5250
-Wire Wire Line
-	2950 5250 3150 5250
+	2700 5400 2700 5250
 $Comp
 L PlayboardLib:IRM-H638T_TR2 D1
 U 1 1 628A7F49
@@ -1300,8 +1267,6 @@ F 7 "RC0603FR-07100RL" H 7250 3100 50  0001 C CNN "Manufacturer Part Number"
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	7450 3100 7400 3100
-Wire Wire Line
 	7150 3100 6700 3100
 $Comp
 L Device:C_Small C11
@@ -1320,9 +1285,6 @@ F 7 "CL10A475KQ8NNNC" H 7400 3300 50  0001 C CNN "Manufacturer Part Number"
 $EndComp
 Wire Wire Line
 	7400 3100 7400 3200
-Connection ~ 7400 3100
-Wire Wire Line
-	7400 3100 7350 3100
 Wire Wire Line
 	7400 3400 7400 3500
 Wire Wire Line
@@ -1688,10 +1650,10 @@ F 0 "C14" H 9300 4050 50  0000 C CNN
 F 1 "10nF" H 9350 3950 50  0000 C CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 9200 4000 50  0001 C CNN
 F 3 "~" H 9200 4000 50  0001 C CNN
-F 4 "" H 9200 4000 50  0001 C CNN "LCSC Link"
-F 5 "" H 9200 4000 50  0001 C CNN "LCSC Part Number"
-F 6 "" H 9200 4000 50  0001 C CNN "Manufacturer"
-F 7 "" H 9200 4000 50  0001 C CNN "Manufacturer Part Number"
+F 4 "https://www.lcsc.com/product-detail/C57112.html" H 9200 4000 50  0001 C CNN "LCSC Link"
+F 5 "C57112" H 9200 4000 50  0001 C CNN "LCSC Part Number"
+F 6 "FH(Guangdong Fenghua Advanced Tech)" H 9200 4000 50  0001 C CNN "Manufacturer"
+F 7 "0603B103K500NT" H 9200 4000 50  0001 C CNN "Manufacturer Part Number"
 	1    9200 4000
 	1    0    0    -1  
 $EndComp
@@ -1804,6 +1766,10 @@ F 0 "C23" H 10950 5300 50  0000 L CNN
 F 1 "2.2nF" H 10900 5200 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric" H 10850 5300 50  0001 C CNN
 F 3 "~" H 10850 5300 50  0001 C CNN
+F 4 "https://www.lcsc.com/product-detail/C1604.html" H 10850 5300 50  0001 C CNN "LCSC Link"
+F 5 "C1604" H 10850 5300 50  0001 C CNN "LCSC Part Number"
+F 6 "FH(Guangdong Fenghua Advanced Tech)" H 10850 5300 50  0001 C CNN "Manufacturer"
+F 7 "0603B222K500NT" H 10850 5300 50  0001 C CNN "Manufacturer Part Number"
 	1    10850 5300
 	1    0    0    -1  
 $EndComp
@@ -1883,7 +1849,7 @@ Text Label 5450 6700 0    50   ~ 0
 I2C0_SDA
 Connection ~ 4500 6650
 Wire Wire Line
-	4500 6650 4500 6950
+	4500 6650 4500 6900
 $Comp
 L Sensor_Humidity:SHT30-DIS U7
 U 1 1 62413237
@@ -1892,6 +1858,10 @@ F 0 "U7" H 7450 6150 50  0000 C CNN
 F 1 "SHT30-DIS" H 7950 6150 50  0000 C CNN
 F 2 "Sensor_Humidity:Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm" H 7700 5950 50  0001 C CNN
 F 3 "https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3x_Datasheet_digital.pdf" H 7700 5950 50  0001 C CNN
+F 4 "https://www.lcsc.com/product-detail/C77361.html" H 7700 5900 50  0001 C CNN "LCSC Link"
+F 5 "C77361" H 7700 5900 50  0001 C CNN "LCSC Part Number"
+F 6 "Sensirion" H 7700 5900 50  0001 C CNN "Manufacturer"
+F 7 "SHT30-DIS-B2.5KS" H 7700 5900 50  0001 C CNN "Manufacturer Part Number"
 	1    7700 5900
 	1    0    0    -1  
 $EndComp
@@ -1969,4 +1939,123 @@ NoConn ~ 8100 6000
 NoConn ~ 7300 5900
 Text Notes 9500 3800 0    50   ~ 0
 Accelerometer / Gyro
+NoConn ~ 5300 6450
+NoConn ~ 4400 6800
+NoConn ~ 4300 6150
+NoConn ~ 4200 6150
+NoConn ~ 4000 6150
+NoConn ~ 3900 6150
+NoConn ~ 3800 6150
+NoConn ~ 3700 6150
+NoConn ~ 3150 5750
+NoConn ~ 3150 4550
+NoConn ~ 10950 4550
+Wire Wire Line
+	3100 4650 3150 4650
+Connection ~ 3100 4650
+Wire Wire Line
+	7350 3100 7400 3100
+Wire Wire Line
+	7400 3100 7450 3100
+Connection ~ 7400 3100
+Wire Wire Line
+	9200 1400 9350 1400
+Wire Wire Line
+	8600 1400 9000 1400
+$Comp
+L Device:Polyfuse_Small F1
+U 1 1 61DE7E30
+P 9100 1400
+F 0 "F1" V 8895 1400 50  0000 C CNN
+F 1 "500mA 1A" V 8986 1400 50  0000 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric_Castellated" H 9150 1200 50  0001 L CNN
+F 3 "~" H 9100 1400 50  0001 C CNN
+F 4 "https://www.lcsc.com/product-detail/C910822.html" H 9100 1400 50  0001 C CNN "LCSC Link"
+F 5 "C910822" H 9100 1400 50  0001 C CNN "LCSC Part Number"
+F 6 "BHFUSE" H 9100 1400 50  0001 C CNN "Manufacturer"
+F 7 "BSMD0805-050-24V" H 9100 1400 50  0001 C CNN "Manufacturer Part Number"
+	1    9100 1400
+	0    1    1    0   
+$EndComp
+Text Label 2100 1200 2    50   ~ 0
+USB_5V
+Wire Wire Line
+	1500 1200 2100 1200
+Text Label 8600 1400 0    50   ~ 0
+USB_5V
+Wire Wire Line
+	4500 6900 4550 6900
+Connection ~ 4500 6900
+Wire Wire Line
+	4500 6900 4500 7200
+Wire Wire Line
+	4950 6900 5050 6900
+Wire Wire Line
+	5050 6900 5050 6950
+$Comp
+L power:GND #PWR0101
+U 1 1 61C05DB1
+P 5050 6950
+F 0 "#PWR0101" H 5050 6700 50  0001 C CNN
+F 1 "GND" H 5055 6777 50  0000 C CNN
+F 2 "" H 5050 6950 50  0001 C CNN
+F 3 "" H 5050 6950 50  0001 C CNN
+	1    5050 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 5400 2700 5550
+Connection ~ 2700 5400
+Wire Wire Line
+	2200 5550 2200 5600
+$Comp
+L power:GND #PWR0102
+U 1 1 61C73D47
+P 2200 5600
+F 0 "#PWR0102" H 2200 5350 50  0001 C CNN
+F 1 "GND" H 2200 5450 50  0000 C CNN
+F 2 "" H 2200 5600 50  0001 C CNN
+F 3 "" H 2200 5600 50  0001 C CNN
+	1    2200 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 5250 3150 5250
+Wire Wire Line
+	2650 5250 2700 5250
+Connection ~ 2700 5250
+Wire Wire Line
+	2700 5550 2650 5550
+Wire Wire Line
+	2250 5550 2200 5550
+$Comp
+L Switch:SW_SPST SW2
+U 1 1 61BDEAF6
+P 4750 6900
+F 0 "SW2" H 4750 6825 50  0000 C CNN
+F 1 "SW_SPST" H 4750 6750 50  0000 C CNN
+F 2 "PlayboardLib:TS-1101-C-W" H 4750 6900 50  0001 C CNN
+F 3 "~" H 4750 6900 50  0001 C CNN
+F 4 "https://www.lcsc.com/product-detail/C318938.html" H 4750 6900 50  0001 C CNN "LCSC Link"
+F 5 "C318938" H 4750 6900 50  0001 C CNN "LCSC Part Number"
+F 6 "XKB Connectivity" H 4750 6900 50  0001 C CNN "Manufacturer"
+F 7 "TS-1101-C-W" H 4750 6900 50  0001 C CNN "Manufacturer Part Number"
+	1    4750 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 61BDD04F
+P 2450 5550
+F 0 "SW1" H 2450 5475 50  0000 C CNN
+F 1 "SW_SPST" H 2450 5400 50  0000 C CNN
+F 2 "PlayboardLib:TS-1101-C-W" H 2450 5550 50  0001 C CNN
+F 3 "~" H 2450 5550 50  0001 C CNN
+F 4 "https://www.lcsc.com/product-detail/C318938.html" H 2450 5550 50  0001 C CNN "LCSC Link"
+F 5 "C318938" H 2450 5550 50  0001 C CNN "LCSC Part Number"
+F 6 "XKB Connectivity" H 2450 5550 50  0001 C CNN "Manufacturer"
+F 7 "TS-1101-C-W" H 2450 5550 50  0001 C CNN "Manufacturer Part Number"
+	1    2450 5550
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
