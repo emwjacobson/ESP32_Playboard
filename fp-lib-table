@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name PlayboardLib)(type KiCad)(uri ${KIPRJMOD}/PlayboardLib.pretty)(options "")(descr ""))
+)
