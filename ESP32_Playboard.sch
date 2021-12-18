@@ -556,7 +556,7 @@ U 1 1 628A7F49
 P 7550 3000
 F 0 "D1" H 7800 3165 50  0000 C CNN
 F 1 "IRM-H638T_TR2" H 7800 3074 50  0000 C CNN
-F 2 "PlayboardLib:LED_SMD-4" H 7550 3000 50  0001 C CNN
+F 2 "PlayboardLib:LED-SMD-4" H 7550 3000 50  0001 C CNN
 F 3 "" H 7550 3000 50  0001 C CNN
 F 4 "https://www.lcsc.com/product-detail/C91447.html" H 7550 3000 50  0001 C CNN "LCSC Link"
 F 5 "C91447" H 7550 3000 50  0001 C CNN "LCSC Part Number"
@@ -782,31 +782,31 @@ $EndComp
 $Comp
 L Device:R_Small R4
 U 1 1 629BDA54
-P 9600 3400
-F 0 "R4" V 9450 3550 50  0000 C CNN
-F 1 "47" V 9550 3550 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" H 9600 3400 50  0001 C CNN
-F 3 "~" H 9600 3400 50  0001 C CNN
-F 4 "https://www.lcsc.com/product-detail/C1211.html" H 9600 3400 50  0001 C CNN "LCSC Link"
-F 5 "C1211" H 9600 3400 50  0001 C CNN "LCSC Part Number"
-F 6 "UNI-ROYAL(Uniroyal Elec)" H 9600 3400 50  0001 C CNN "Manufacturer"
-F 7 "0603WAJ0470T5E" H 9600 3400 50  0001 C CNN "Manufacturer Part Number"
-	1    9600 3400
+P 9350 3400
+F 0 "R4" V 9200 3550 50  0000 C CNN
+F 1 "47" V 9300 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 9350 3400 50  0001 C CNN
+F 3 "~" H 9350 3400 50  0001 C CNN
+F 4 "https://www.lcsc.com/product-detail/C1211.html" H 9350 3400 50  0001 C CNN "LCSC Link"
+F 5 "C1211" H 9350 3400 50  0001 C CNN "LCSC Part Number"
+F 6 "UNI-ROYAL(Uniroyal Elec)" H 9350 3400 50  0001 C CNN "Manufacturer"
+F 7 "0603WAJ0470T5E" H 9350 3400 50  0001 C CNN "Manufacturer Part Number"
+	1    9350 3400
 	0    1    1    0   
 $EndComp
 $Comp
 L Device:LED_Small D2
 U 1 1 629B2955
-P 9350 3400
-F 0 "D2" H 9450 3450 50  0000 C CNN
-F 1 "IR LED" H 9450 3550 50  0000 C CNN
-F 2 "LED_SMD:LED_0603_1608Metric" V 9350 3400 50  0001 C CNN
-F 3 "~" V 9350 3400 50  0001 C CNN
-F 4 "https://www.lcsc.com/product-detail/C50494.html" H 9350 3400 50  0001 C CNN "LCSC Link"
-F 5 "C50494" H 9350 3400 50  0001 C CNN "LCSC Part Number"
-F 6 "Everlight Elec" H 9350 3400 50  0001 C CNN "Manufacturer"
-F 7 "MIR60363T" H 9350 3400 50  0001 C CNN "Manufacturer Part Number"
-	1    9350 3400
+P 9600 3400
+F 0 "D2" H 9700 3450 50  0000 C CNN
+F 1 "IR LED" H 9700 3550 50  0000 C CNN
+F 2 "LED_SMD:LED_0603_1608Metric" V 9600 3400 50  0001 C CNN
+F 3 "~" V 9600 3400 50  0001 C CNN
+F 4 "https://www.lcsc.com/product-detail/C50494.html" H 9600 3400 50  0001 C CNN "LCSC Link"
+F 5 "C50494" H 9600 3400 50  0001 C CNN "LCSC Part Number"
+F 6 "Everlight Elec" H 9600 3400 50  0001 C CNN "Manufacturer"
+F 7 "MIR60363T" H 9600 3400 50  0001 C CNN "Manufacturer Part Number"
+	1    9600 3400
 	-1   0    0    1   
 $EndComp
 Text Label 8550 3150 0    50   ~ 0
@@ -1380,22 +1380,6 @@ NoConn ~ 3550 5200
 NoConn ~ 3550 5300
 NoConn ~ 4750 4500
 NoConn ~ 4750 4700
-$Comp
-L PlayboardLib:ESP32-WROVER-I U4
-U 1 1 61BE7406
-P 4150 5100
-F 0 "U4" H 4150 6467 50  0000 C CNN
-F 1 "ESP32-WROVER-I" H 4150 6376 50  0000 C CNN
-F 2 "PlayboardLib:XCVR_ESP32-WROVER-I" H 3850 6350 50  0001 L BNN
-F 3 "" H 4150 5100 50  0001 L BNN
-F 4 "16MB Variant" H 4150 5100 50  0001 C CNN "Description"
-F 5 "https://www.lcsc.com/product-detail/C701352.html" H 4150 5100 50  0001 C CNN "LCSC Link"
-F 6 "C701352" H 4150 5100 50  0001 C CNN "LCSC Part Number"
-F 7 "Espressif Systems" H 4150 5100 50  0001 C CNN "Manufacturer"
-F 8 "ESP32-WROVER-IE(16MB)" H 4150 5100 50  0001 C CNN "Manufacturer Part Number"
-	1    4150 5100
-	1    0    0    -1  
-$EndComp
 NoConn ~ 4750 4900
 NoConn ~ 4750 5000
 NoConn ~ 3550 5900
@@ -1447,4 +1431,20 @@ Wire Wire Line
 	4750 4300 5200 4300
 Text Label 5200 4300 2    50   ~ 0
 ESP_RX
+$Comp
+L PlayboardLib:ESP32-WROVER-I U4
+U 1 1 61BE7406
+P 4150 5100
+F 0 "U4" H 4150 6467 50  0000 C CNN
+F 1 "ESP32-WROVER-I" H 4150 6376 50  0000 C CNN
+F 2 "PlayboardLib:XCVR_ESP32-WROVER-I" H 3850 6350 50  0001 L BNN
+F 3 "" H 4150 5100 50  0001 L BNN
+F 4 "16MB Variant" H 4150 5100 50  0001 C CNN "Description"
+F 5 "https://www.lcsc.com/product-detail/C701352.html" H 4150 5100 50  0001 C CNN "LCSC Link"
+F 6 "C701352" H 4150 5100 50  0001 C CNN "LCSC Part Number"
+F 7 "Espressif Systems" H 4150 5100 50  0001 C CNN "Manufacturer"
+F 8 "ESP32-WROVER-IE(16MB)" H 4150 5100 50  0001 C CNN "Manufacturer Part Number"
+	1    4150 5100
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
