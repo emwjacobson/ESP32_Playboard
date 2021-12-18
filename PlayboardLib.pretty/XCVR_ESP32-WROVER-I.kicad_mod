@@ -1,4 +1,4 @@
-(module XCVR_ESP32-WROVER-I (layer F.Cu) (tedit 61BE10F6)
+(module XCVR_ESP32-WROVER-I (layer F.Cu) (tedit 61BE1175)
   (fp_text reference REF** (at -5.23668 -16.82262) (layer F.SilkS)
     (effects (font (size 1.002236 1.002236) (thickness 0.15)))
   )
@@ -63,4 +63,9 @@
   (pad 3 smd roundrect (at -8.81 -5.72) (size 1.45 0.93) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.23))
   (pad 2 smd roundrect (at -8.81 -6.99) (size 1.45 0.93) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.23))
   (pad 1 smd roundrect (at -8.81 -8.26) (size 1.45 0.93) (layers F.Cu F.Paste F.Mask) (roundrect_rratio 0.23))
+  (model :Project:ESP32-WROVER-I.step
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
