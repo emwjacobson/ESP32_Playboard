@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 Text Notes 9950 6450 0    50   ~ 0
-TODO:\nLEDs\n    (Single color? Neopixel?)\nReset Button\nDownload Button(?)\nJTAG\nREADME
+TODO:\nLEDs\n    (Single color? Neopixel?)\nJTAG
 $Comp
 L Regulator_Linear:AMS1117-3.3 U1
 U 1 1 61BE35A8
@@ -1459,10 +1459,10 @@ F 3 "~" H 11050 600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Mechanical:MountingHole H3
+L Mechanical:MountingHole H1
 U 1 1 61F5140B
 P 10800 600
-F 0 "H3" H 10900 646 50  0000 L CNN
+F 0 "H1" H 10900 646 50  0000 L CNN
 F 1 "MountingHole" H 10900 555 50  0000 L CNN
 F 2 "MountingHole:MountingHole_3.2mm_M3" H 10800 600 50  0001 C CNN
 F 3 "~" H 10800 600 50  0001 C CNN
