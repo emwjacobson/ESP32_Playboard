@@ -13,7 +13,6 @@ The Playboard includes the following sensors/devices:
 
 In the PCB I added a small notch between the IR LED and the IR Receiver. This can be used to add a little divider to seperate them if simultaneous operation is required. Without a divider, the LED will be detected by the receiver.
 
-
 ## Schematic
 
 Click to view full size PDF of schematic.
@@ -25,6 +24,6 @@ Click to view full size PDF of schematic.
 
 ## TODO
 
-- Add JLCJLCJLCJLC to PCB somewhere
-- Fill out the README more!
+- JTAG Header
 - Add some GPIO LEDs!
+- Fill out the README more!
